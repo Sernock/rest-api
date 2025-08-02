@@ -24,7 +24,7 @@ import (
 	"github.com/go-chi/chi/v5/middleware"
 )
 
-const (
+const ( 
 	envLocal = "local"
 	envDev   = "dev"
 	envProd  = "prod"
@@ -56,7 +56,7 @@ func main() {
 	router.Use(middleware.Recoverer)
 	router.Use(middleware.URLFormat)
 
-	// middleware
+	// ! middleware
 }
 
 func setupLogger(env string) *slog.Logger {
